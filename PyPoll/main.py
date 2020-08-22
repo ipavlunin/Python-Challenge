@@ -25,7 +25,7 @@ cand_num_list = [vote_list.count(item) for item in cand_list]
 z = 0
 while z < len(cand_num_list):
     cand_percent_list.append(cand_num_list[z]/total_votes)
-    z = z + 1
+    z += 1
  
 # The Winner
 win_index = 0
@@ -63,5 +63,3 @@ n = '\n'
 output = f'{a} \n{b} \n{c} \n{d} \n{e} \n{f} \n{g} \n{h} \n{i} \n{j} \n{k}'
 with open(file_to_output, "w") as txt_file:
     txt_file.write(output)
-
-    
