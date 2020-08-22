@@ -33,7 +33,6 @@ this_dict_list = [int(i) for i in this_dict_list]
 net_total = sum(this_dict_list)
 
 # creating a new list and populating calculated difference between months
-diff = []
 diff = [this_dict_list[i+1] - this_dict_list[i] for i in range(len(this_dict_list)-1)]
 
 # calculating difference numbers average
